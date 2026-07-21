@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio Ade Andrian</title>
+<meta name="description" content="Portfolio Ade Andrian — Linux, Infrastructure &amp; Networking Enthusiast." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ================= BACKGROUND LAYER ================= -->
+<div class="bg-layer" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="bg-noise"></div>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <nav class="navbar-inner" aria-label="Navigasi utama">
+    <a href="#hero" class="nav-logo" data-nav-link data-target="hero">Ade Andrian</a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-nav-link data-target="about"><span>About</span></a></li>
+      <li><a href="#stacks" data-nav-link data-target="stacks"><span>Stacks</span></a></li>
+      <li><a href="#journey" data-nav-link data-target="journey"><span>Journey</span></a></li>
+      <li><a href="#projects" data-nav-link data-target="projects"><span>Projects</span></a></li>
+      <li><a href="#certification" data-nav-link data-target="certification"><span>Certification</span></a></li>
+      <li><a href="#contact" data-nav-link data-target="contact"><span>Contact</span></a></li>
+      <li class="nav-underline" id="navUnderline" aria-hidden="true"></li>
+    </ul>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- ================= MOBILE MENU ================= -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#hero" data-nav-link data-target="hero" data-mobile>Home</a></li>
+    <li><a href="#about" data-nav-link data-target="about" data-mobile>About</a></li>
+    <li><a href="#stacks" data-nav-link data-target="stacks" data-mobile>Stacks</a></li>
+    <li><a href="#journey" data-nav-link data-target="journey" data-mobile>Journey</a></li>
+    <li><a href="#projects" data-nav-link data-target="projects" data-mobile>Projects</a></li>
+    <li><a href="#certification" data-nav-link data-target="certification" data-mobile>Certification</a></li>
+    <li><a href="#contact" data-nav-link data-target="contact" data-mobile>Contact</a></li>
+  </ul>
+</div>
+
+<main id="hero">
+
+  <!-- ================= HERO ================= -->
+  <section class="section hero-section">
+    <div class="container hero-grid">
+
+      <div class="hero-copy" data-reveal="left">
+        <p class="eyebrow eyebrow-mono">Hello, I'm</p>
+        <h1 class="hero-name">Ade Andrian</h1>
+        <p class="hero-role">Linux <span class="dot">•</span> Infrastructure <span class="dot">•</span> Networking</p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" data-nav-link data-target="projects">
+            <span>View Projects</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="assets/CV_Ade_Andrian.pdf" class="btn btn-secondary" download>
+            <span>Download CV</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-portrait" data-reveal="right">
+        <div class="portrait-frame">
+          <div class="portrait-glow" aria-hidden="true"></div>
+          <img src="assets/profile-photo.jpg" alt="Foto profesional Ade Andrian" class="portrait-img"
+               onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22720%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23161B22%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%236B7480%22 font-family=%22sans-serif%22 font-size=%2224%22 text-anchor=%22middle%22>Ganti dengan foto Anda</text></svg>'">
+        </div>
+        <div class="portrait-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 17h16M4 12h16M4 7h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Fresh Graduate</span>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="scroll-cue" id="scrollCue" aria-label="Gulir ke bawah">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 5v14m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="eyebrow" data-reveal="up">ABOUT ME</p>
+      <h2 class="section-title" data-reveal="up">Passionate About Linux,<br/>Infrastructure & Networking</h2>
+
+      <div class="glass-card about-card" data-reveal="up">
+        <p class="about-text">
+          I am a fresh graduate with a strong interest in Linux system administration, infrastructure, and computer networking.
+          Through academic projects, my internship, and hands-on practice, I have gained practical experience with Linux servers,
+          virtualization, network configuration, and infrastructure monitoring. I am eager to continuously develop my technical
+          skills and grow as a Linux Systems Administrator, contributing to secure, stable, and efficient IT environments.
+        </p>
+        <div class="about-meta">
+          <div class="about-meta-item">
+            <span class="about-meta-label">Focus</span>
+            <span class="about-meta-value">Linux System Administration</span>
+          </div>
+          <div class="about-meta-item">
+            <span class="about-meta-label">Interest</span>
+            <span class="about-meta-value">Infrastructure & Networking</span>
+          </div>
+          <div class="about-meta-item">
+            <span class="about-meta-label">Status</span>
+            <span class="about-meta-value">Open to Work</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TECHNICAL stacks ================= -->
+  <section class="section" id="stacks">
+    <div class="container">
+      <p class="eyebrow" data-reveal="up">TECH STACKS</p>
+      <h2 class="section-title" data-reveal="up">Technologies<br/>& Tools</h2>
+
+      <div class="stacks-grid">
+
+        <div class="glass-card stack-card" data-reveal="up">
+          <h3 class="stack-title">Operating Systems</h3>
+          <div class="pill-group">
+            <span class="pill">Ubuntu Server</span>
+            <span class="pill">Debian Server</span>
+          </div>
+        </div>
+
+        <div class="glass-card stack-card" data-reveal="up">
+          <h3 class="stack-title">Virtualization</h3>
+          <div class="pill-group">
+            <span class="pill">VirtualBox</span>
+            <span class="pill">Proxmox VE</span>
+          </div>
+        </div>
+
+        <div class="glass-card stack-card" data-reveal="up">
+          <h3 class="stack-title">Network Devices</h3>
+          <div class="pill-group">
+            <span class="pill">MikroTik RouterOS</span>
+            <span class="pill">Cloud Smart Switch</span>
+          </div>
+        </div>
+
+        <div class="glass-card stack-card" data-reveal="up">
+          <h3 class="stack-title">Documentation</h3>
+          <div class="pill-group">
+            <span class="pill">Google Sheets</span>
+            <span class="pill">Microsoft PowerPoint</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= JOURNEY ================= -->
+  <section class="section" id="journey">
+    <div class="container">
+      <p class="eyebrow" data-reveal="up">JOURNEY</p>
+      <h2 class="section-title" data-reveal="up">Growing Through Every<br/>Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-line" aria-hidden="true"><div class="timeline-line-fill" id="timelineFill"></div></div>
+
+        <div class="timeline-item" data-reveal="up">
+          <div class="timeline-node"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-card-top">
+              <span class="timeline-period">Student</span>
+              <span class="timeline-year">Jul 2023 – Mei 2026</span>
+            </div>
+            <h3 class="timeline-title">SMKN 4 Bogor</h3>
+            <p class="timeline-desc">
+              Started my journey in Technical Computer Network and Telecommunication,
+              where I explored technology through hands-on learning, practical projects,
+              and continuous curiosity.
+            </p>
+            <div class="pill-group">
+              <span class="pill pill-sm">Linux</span>
+              <span class="pill pill-sm">Networking</span>
+              <span class="pill pill-sm">MikroTik</span>
+              <span class="pill pill-sm">Server</span>
+              <span class="pill pill-sm">Virtualization</span>
+              <span class="pill pill-sm">Documentation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal="up">
+          <div class="timeline-node"></div>
+          <div class="glass-card timeline-card">
+            <div class="timeline-card-top">
+              <span class="timeline-period">Intern</span>
+              <span class="timeline-year">Jan 2026 - Apr 2026</span>
+            </div>
+            <h3 class="timeline-title">PT Mahardika Teknotama Integrasi</h3>
+            <p class="timeline-desc">
+              Completed an internship at PT Mahardika Teknotama Integrasi, gaining hands-on
+              experience in network operations, system administration, infrastructure monitoring,
+              and technical support while working in a professional environment.
+            </p>
+            <div class="pill-group">
+              <span class="pill pill-sm">Ubuntu Server</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="eyebrow" data-reveal="up">PROJECTS</p>
+      <h2 class="section-title" data-reveal="up">Projects Worked On</h2>
+
+      <div class="projects-grid">
+
+        <article class="glass-card project-card" data-reveal="up">
+          <div class="project-head">
+            <h3 class="project-title">High Availability Nextcloud Infrastructure</h3>
+            <p class="project-desc">
+              Designed and implemented a High Availability Nextcloud infrastructure
+              with load balancing and automatic failover to ensure service availability.
+            </p>
+            <div class="pill-group">
+              <span class="pill pill-sm">Apache2</span>
+              <span class="pill pill-sm">PHP FPM</span>
+              <span class="pill pill-sm">HAProxy</span>
+              <span class="pill pill-sm">Keepalived</span>
+              <span class="pill pill-sm">MariaDB</span>
+              <span class="pill pill-sm">MariaDB Galera Cluster</span>
+              <span class="pill pill-sm">GlusterFS</span>
+              <span class="pill pill-sm">Redis</span>
+
+            </div>
+            <button class="btn-more" data-project-toggle aria-expanded="false">
+              <span>More</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+
+          <div class="project-body" data-project-body>
+            <div class="project-body-inner">
+              <div class="project-detail">
+                <h4>Architecture</h4>
+                <p>Built a four-node High Availability Nextcloud infrastructure consisting of two Nextcloud application nodes and two HAProxy nodes with Keepalived for load balancing and automatic failover. The architecture also included a MariaDB Galera Cluster for database replication, GlusterFS for shared distributed storage, and Redis for caching and file locking.</p>
+              </div>
+              <div class="project-detail">
+                <h4>Implementation</h4>
+                <p>Configured the Nextcloud application nodes to access shared data through GlusterFS, while MariaDB Galera Cluster provided database replication across nodes. HAProxy distributed traffic between the Nextcloud nodes, with Keepalived managing the Virtual IP for failover between the HAProxy nodes. Health checks were configured to ensure traffic was directed only to available backend servers.</p>
+              </div>
+              <div class="project-detail">
+                <h4>Challenges</h4>
+                <p>The main challenges involved maintaining consistency across multiple application nodes and troubleshooting the interaction between the database cluster, distributed storage, Redis, and load-balancing components. Issues encountered included database connectivity, GlusterFS node connectivity, Redis configuration, and backend health status.</p>
+              </div>
+              <div class="project-detail">
+                <h4>Solutions</h4>
+                <p>Configured Redis for centralized file locking and caching, MariaDB Galera Cluster for database replication, and GlusterFS for shared data access between Nextcloud nodes. HAProxy health checks and Keepalived failover mechanisms were configured to support service continuity when a node or load balancer became unavailable.</p>
+              </div>
+              <div class="project-detail">
+                <h4>Results</h4>
+                <p>Successfully implemented a High Availability Nextcloud infrastructure where service access could be maintained during node maintenance or component failure through load balancing and automatic failover. The project provided hands-on experience in Linux system administration, virtualization, high availability, clustering, distributed storage, and infrastructure troubleshooting.</p>
+              </div>
+
+              <div class="project-gallery">
+                <div class="gallery-item">
+                  <img src="assets/project-nextcloud-1.jpg" alt="Diagram arsitektur cluster Nextcloud"
+                       onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22480%22 height=%22320%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23161B22%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%236B7480%22 font-family=%22sans-serif%22 font-size=%2216%22 text-anchor=%22middle%22>Screenshot / Diagram</text></svg>'">
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATION ================= -->
+  <section class="section" id="certification">
+    <div class="container">
+      <p class="eyebrow" data-reveal="up">CERTIFICATION</p>
+      <h2 class="section-title" data-reveal="up">Certifications That Support<br/>My Practical Skills</h2>
+
+      <div class="cert-grid">
+
+        <div class="glass-card cert-card" data-reveal="up">
+          <div class="cert-top">
+            <!-- <div class="cert-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div> -->
+            <!-- <span class="cert-badge">ACTIVE</span> -->
+          </div>
+          <h3 class="cert-title"></h3>
+          <p class="cert-desc"></p>
+          <!-- <button class="cert-view" data-cert-modal-trigger data-cert-image="assets/certificate-mikrotik.png">View <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button> -->
+        </div>
+
+        <div class="glass-card cert-card" data-reveal="up">
+          <div class="cert-top">
+            <!-- <div class="cert-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div> -->
+            <!-- <span class="cert-badge">ACTIVE</span> -->
+          </div>
+          <h3 class="cert-title"></h3>
+          <p class="cert-desc"></p>
+          <!-- <button class="cert-view" data-cert-modal-trigger data-cert-image="assets/certificate-mikrotik.png">View <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button> -->
+        </div>
+
+        <div class="glass-card cert-card" data-reveal="up">
+          <div class="cert-top">
+            <!-- <div class="cert-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div> -->
+            <!-- <span class="cert-badge">ACTIVE</span> -->
+          </div>
+          <h3 class="cert-title"></h3>
+          <p class="cert-desc"></p>
+          <!-- <button class="cert-view" data-cert-modal-trigger data-cert-image="assets/certificate-mikrotik.png">View <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button> -->
+        </div>
+
+        <div class="glass-card cert-card" data-reveal="up">
+          <div class="cert-top">
+            <!-- <div class="cert-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div> -->
+            <!-- <span class="cert-badge">ACTIVE</span> -->
+          </div>
+          <h3 class="cert-title"></h3>
+          <p class="cert-desc"></p>
+          <!-- <button class="cert-view" data-cert-modal-trigger data-cert-image="assets/certificate-mikrotik.png">View <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button> -->
+        </div>
+
+        <!-- <div class="glass-card cert-card" data-reveal="up">
+          <div class="cert-top">
+            <div class="cert-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <span class="cert-badge">ACTIVE</span>
+          </div>
+          <h3 class="cert-title">Linux Fundamentals</h3>
+          <p class="cert-desc">Pemahaman mendasar tentang administrasi sistem operasi berbasis Linux.</p>
+          <button class="cert-view" data-cert-modal-trigger data-cert-image="assets/certificate-linux.png">View <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+
+        <div class="glass-card cert-card" data-reveal="up">
+          <div class="cert-top">
+            <div class="cert-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 20h8M12 18v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <span class="cert-badge">ACTIVE</span>
+          </div>
+          <h3 class="cert-title">Virtualization with Proxmox VE</h3>
+          <p class="cert-desc">Pelatihan implementasi dan pengelolaan lingkungan virtualisasi menggunakan Proxmox VE.</p>
+          <button class="cert-view" data-cert-modal-trigger data-cert-image="assets/certificate-proxmox.png">View <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section" id="contact">
+    <div class="container contact-container">
+      <p class="eyebrow" data-reveal="up">CONTACT</p>
+      <h2 class="section-title" data-reveal="up">Let's Connect</h2>
+      <p class="contact-desc" data-reveal="up">
+        Open to internship and entry-level opportunities in Linux system administration and infrastructure.
+        If you have an opportunity that might be a good fit, feel free to reach out through any of the channels below.
+      </p>
+
+      <div class="contact-icons" data-reveal="up">
+        <a href="mailto:adeandrianp@gmail.com" class="icon-btn" aria-label="Kirim email ke Ade Andrian" title="Email">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="currentColor" stroke-width="2"/><path d="M3.5 6.5l8.5 6 8.5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://wa.me/+6285175320987" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Hubungi via WhatsApp" title="WhatsApp">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20.5 11.9a8.4 8.4 0 01-12.3 7.4L3.5 20.5l1.3-4.6A8.4 8.4 0 1120.5 11.9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 10.2c0 3 2.6 5.6 5.6 5.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/adeandrianp" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="Kunjungi profil LinkedIn" title="LinkedIn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="2"/><path d="M7.5 10v6.5M7.5 7.5v.01M12 16.5V13c0-1.4 1-2.5 2.3-2.5S16.5 11.6 16.5 13v3.5M12 10v6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="cert-modal" id="certModal" aria-hidden="true">
+    <div class="cert-modal-backdrop" data-cert-modal-close></div>
+    <div class="cert-modal-dialog" role="dialog" aria-modal="true" aria-label="Preview sertifikat">
+      <button class="cert-modal-close" type="button" aria-label="Tutup" data-cert-modal-close>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <img id="certModalImage" src="" alt="Preview sertifikat" />
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Ade Andrian. Built with care, one system at a time.</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
